@@ -124,7 +124,7 @@ Desarrollado con Python y Flet.
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones son las que hacen de la comunidad de código abierto un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas es **muy apreciada**.
 
@@ -136,13 +136,13 @@ Las contribuciones son las que hacen de la comunidad de código abierto un lugar
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Distribuido bajo la Licencia MIT. Esto significa que puedes usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del software.
 
 ---
 
-## 📞 Contacto
+## Contacto
 
 **Líder del Proyecto** - Alejandro Giraldo
 
