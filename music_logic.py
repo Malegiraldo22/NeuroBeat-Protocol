@@ -87,7 +87,7 @@ class MusicLogic:
                 if hasattr(audio, 'info') and hasattr(audio.info, 'bitrate'):
                     data['bitrate'] = int(audio.info.bitrate / 1000)
         except Exception:
-            pass # Si falla, se queda con los valores por defecto
+            pass # Si falla, usa los valores por defecto
         return data
 
     def _infer_metadata(self, meta):

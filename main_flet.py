@@ -68,12 +68,11 @@ class MusicAppFlet:
             on_click=self.pick_folder
         )
 
-        # 2. Tabs (CORREGIDO: Eliminado indicator_weight)
+        # 2. Tabs
         self.tabs = ft.Tabs(
             selected_index=0,
             animation_duration=200,
             indicator_color=CP_RED,
-            # indicator_weight eliminado para evitar error
             label_color=CP_RED,
             label_text_style=ft.TextStyle(font_family="CyberHeader", size=14, weight="bold"),
             unselected_label_color=CP_TEXT_DIM,
@@ -82,7 +81,7 @@ class MusicAppFlet:
             on_change=self.on_tab_change,
             tabs=[
                 ft.Tab(text="DATA_LIBRARY", icon=ft.Icons.MEMORY),
-                # Usamos iconos estándar para asegurar compatibilidad
+                # iconos estándar para asegurar compatibilidad
                 ft.Tab(text="CONFLICT_DETECTED", icon=ft.Icons.WARNING_AMBER), 
                 ft.Tab(text="METADATA_PATCH", icon=ft.Icons.BUILD),
             ],
@@ -102,7 +101,6 @@ class MusicAppFlet:
             heading_row_color=CP_SURFACE,
             heading_row_height=50,
             data_row_min_height=40,
-            # data_row_color={ft.ControlState.HOVERED: "#1a1a1a"}, # Comentado por si acaso tu versión de flet es antigua
             border=ft.border.all(1, CP_BORDER),
             vertical_lines=ft.border.BorderSide(1, "#111111"),
             horizontal_lines=ft.border.BorderSide(1, "#111111"),
@@ -116,7 +114,6 @@ class MusicAppFlet:
         self.btn_delete_all = ft.ElevatedButton(
             "PURGE MARKED (0)", 
             style=ft.ButtonStyle(
-                # bgcolor={ft.ControlState.DEFAULT: CP_RED, ft.ControlState.DISABLED: "#333"}, # Simplificado para compatibilidad
                 bgcolor=CP_RED,
                 color="white",
                 shape=ft.RoundedRectangleBorder(radius=2), 
@@ -159,7 +156,7 @@ class MusicAppFlet:
                 [
                     ft.Column([
                         ft.Text("NEUROBEAT", size=28, font_family="CyberHeader", color=CP_YELLOW, weight="bold"),
-                        ft.Text("PROTOCOL v5.0", size=12, font_family="CyberMono", color=CP_RED) # tracking eliminado por compatibilidad
+                        ft.Text("PROTOCOL v5.0", size=12, font_family="CyberMono", color=CP_RED)
                     ], spacing=0),
                     self.btn_select_folder
                 ],
