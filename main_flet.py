@@ -35,9 +35,9 @@ class MusicAppFlet:
         
         # Cargar Fuentes (Google Fonts)
         self.page.fonts = {
-            "CyberHeader": "Orbitron",
-            "CyberMono": "Roboto Mono",
-            "CyberBody": "Rajdhani"
+            "CyberHeader": "https://github.com/google/fonts/raw/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+            "CyberMono": "https://github.com/google/fonts/raw/main/apache/robotomono/RobotoMono%5Bwght%5D.ttf",
+            "CyberBody": "https://github.com/google/fonts/raw/main/ofl/rajdhani/Rajdhani-Medium.ttf"
         }
         
         # Tema Global
